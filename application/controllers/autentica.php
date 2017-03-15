@@ -21,10 +21,16 @@ class Autentica extends CI_Controller {
 
         if ($this->form_validation->run() == FALSE) {
             //FALHA DE VALIDAÇÃO.  Redirecionando para pagina de login
-           redirect('login', 'refresh');
+            redirect('login', 'refresh');
             //$this->load->view('view_login');
         } else {
             //VALIDAÇÃO OK. Acesso a área privada
+            $login = $this->input->post('login');
+            $sess_array = array();
+            $sess_array = array(
+            'usuariologin' => $login
+            );
+            $this->session->set_userdata('logged_in', $sess_array);
             redirect('home/dashboard', 'refresh');
         }
     }
