@@ -1,3 +1,7 @@
+<?php
+$session_youtube = $this->session->userdata('logged_in');
+$nomeUsuario = $session_youtube['nomeUsuario'];
+?>
 <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -8,7 +12,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p><?php echo $nomeUsuario; ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -27,6 +31,12 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
+            <a href="requicaoajax">
+            <i class="fa fa-dashboard"></i> <span>Requisicao JQUERY/AJAX</span>
+<!--            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>-->
+          </a>
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">

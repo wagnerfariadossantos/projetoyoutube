@@ -55,3 +55,9 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['autentica'] = "autentica";
 $route['paineldecontrole'] = "dashboard";
+
+
+$route['requicaoajax'] = "requicaoajax";
+$route['buscausuarioperfil'] = "buscausuarioperfil";
+
+

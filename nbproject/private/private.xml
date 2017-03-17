@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/wampserver/www/sistemayoutube/application/views/telas/view_dashboard.php</file>
+            <file>file:/C:/wampserver/www/sistemayoutube/application/controllers/autentica.php</file>
+            <file>file:/C:/wampserver/www/sistemayoutube/application/views/template/topbar.php</file>
+            <file>file:/C:/wampserver/www/sistemayoutube/application/models/model_usuario.php</file>
+            <file>file:/C:/wampserver/www/sistemayoutube/application/views/template/sidebar.php</file>
+        </group>
     </open-files>
 </project-private>

@@ -44,9 +44,9 @@ if ($this->session->userdata('logged_in')) {
                 $this->load->view('template/topbar');
                 $this->load->view('template/sidebar');
                 $this->load->view('template/configbar');
-                //if ($tela != '') {
-                    //$this->load->view('telas/' . $tela);
-                //}
+                if ($tela != '') {
+                    $this->load->view('telas/' . $tela);
+                }
                 $this->load->view('template/footer');
                 $this->load->view('template/controlbar');
                 $this->load->view('template/js');
