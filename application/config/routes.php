@@ -61,3 +61,15 @@ $route['requicaoajax'] = "requicaoajax";
 $route['buscausuarioperfil'] = "buscausuarioperfil";
 
 
+
+
+
+
+
+
+
+
+
+
+
+

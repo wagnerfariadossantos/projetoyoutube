@@ -2,14 +2,14 @@
 $session_youtube = $this->session->userdata('logged_in');
 $nomeUsuario = $session_youtube['nomeUsuario'];
 ?>
-<!-- Left side column. contains the logo and sidebar -->
+<!-- Left side column. contains the logo and sizdebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../assets/img/01avatar.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo $nomeUsuario; ?></p>
@@ -37,15 +37,24 @@ $nomeUsuario = $session_youtube['nomeUsuario'];
               <i class="fa fa-angle-left pull-right"></i>
             </span>-->
           </a>
-          <a href="#">
+          <hr>
+          <a href="dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Usu&aacute;rios</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="cadastrausuario"><i class="fa fa-circle-o"></i> Cadastro</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Consulta</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Lista</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Relat&oacute;rio</a></li>
           </ul>
         </li>
         <li class="treeview">
