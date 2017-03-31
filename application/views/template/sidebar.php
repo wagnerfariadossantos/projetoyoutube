@@ -53,7 +53,7 @@ $nomeUsuario = $session_youtube['nomeUsuario'];
           <ul class="treeview-menu">
             <li><a href="cadastrausuario"><i class="fa fa-circle-o"></i> Cadastro</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Consulta</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Lista</a></li>
+            <li><a href="listausuario"><i class="fa fa-circle-o"></i> Lista</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Relat&oacute;rio</a></li>
           </ul>
         </li>

@@ -73,6 +73,17 @@ class Home extends CI_Controller {
 			}
 		}
 	}
+	function listausuario() {
+		if ($this->session->userdata ( 'logged_in' )) { // VALIDA USUÁRIO LOGADO
+			$this->load->model ( 'model_usuario' );
+			$resultadoUsuarios = $this->model_usuario->buscaUsuarios ();
+			//var_dump($resultadoUsuarios);
+			$dados ['resultadoUsuario'] = $resultadoUsuarios;
+			
+			$dados ['tela'] = 'usuarios/view_listausuario';
+			$this->load->view ( 'view_home', $dados );
+		}
+	}
 	
 	/*
 	 * AUXILIARES (AJAX)

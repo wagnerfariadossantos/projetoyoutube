@@ -1,7 +1,11 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.7
+      <b>Ultimo Acesso: </b> 
+      <?php
+      	//date_default_timezone_set('Asia/Karachi');
+      	echo date('d/m/Y H:i:s');
+      ?>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="https://www.youtube.com/wagnerfariadossantos" target="_blank">Sistema You Tube</a>.</strong> Todos os direitos Reservados.
+    <br>
   </footer>

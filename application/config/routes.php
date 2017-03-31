@@ -61,6 +61,10 @@ $route['requicaoajax'] = "requicaoajax";
 $route['buscausuarioperfil'] = "buscausuarioperfil";
 
 
+/*
+ * Usuários
+ */
+$route['listausuario'] = "home/listausuario";
 
 
 
