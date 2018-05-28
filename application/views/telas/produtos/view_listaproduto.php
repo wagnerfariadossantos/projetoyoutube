@@ -3,11 +3,11 @@
 
 <div class="content-wrapper">
       <section class="content-header">
-            <h1>Lista de Usu&aacute;rios</h1>
+            <h1>Lista de Produtos</h1>
             <ol class="breadcrumb">
                   <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                  <li>Usu&aacute;rios</li>
-                  <li class="active">Lista de Usu&aacute;rios</li>
+                  <li>Produtos</li>
+                  <li class="active">Lista </li>
             </ol>
       </section>
 
@@ -22,34 +22,32 @@
                               }
                               ?>
                               <div class="box">
-                                    <div class="box-header with-border">
-                                          <h3 class="box-title">Lista de Usu&aacute;rios localizados</h3>
-                                    </div>
+<!--                                    <div class="box-header with-border">
+                                          <h3 class="box-title">Lista de Produtos</h3>
+                                    </div>-->
                                     <!-- /.box-header -->
                                     <div class="box-body">
                                           <table id="example1" class="table table-bordered table-striped">
                                                 <thead>
                                                       <tr>
                                                             <th style="width:24px">&nbsp;</th>
-                                                            <th>Nome do Usu&aacute;rio</th>
-                                                            <th>Login</th>
-                                                            <th>E-mail</th>
-                                                            <th>Cadastrado em:</th>
-                                                            <th>Ultimo Acesso</th>
+                                                            <th>Produto</th>
+                                                            <th>Unidade</th>
+                                                            <th>Estoque</th>
+                                                            <th>Valor Venda</th>
                                                       </tr>
                                                 </thead>
                                                 <tbody>
                                                       <?php
-                                                      if (isset($resultadoUsuario)) {
-                                                            foreach ($resultadoUsuario as $usuarios) {
+                                                      if (isset($resultadoProduto)) {
+                                                            foreach ($resultadoProduto as $produtos) {
                                                                   ?>
                                                                   <tr>
-                                                                        <td><a href="consultausuario?id=<?php echo $usuarios->id; ?>"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                                        <td><?php echo $usuarios->nome; ?></td>
-                                                                        <td><?php echo $usuarios->login; ?></td>
-                                                                        <td><?php echo $usuarios->email; ?></td>
-                                                                        <td><?php echo $usuarios->datacadastro; ?></td>
-                                                                        <td><?php echo $usuarios->dataultimoacesso; ?></td>
+                                                                        <td><a href="alteraproduto?id=<?php echo $produtos->id; ?>"><i class="fa fa-pencil-square-o"></i></a></td>
+                                                                        <td><?php echo $produtos->descricaoproduto; ?></td>
+                                                                        <td><?php echo $produtos->unidade; ?></td>
+                                                                        <td><?php echo $produtos->qtdeestoque; ?></td>
+                                                                        <td><?php echo $produtos->valorvenda; ?></td>
                                                                   </tr>
                                                                   <?php
                                                             }

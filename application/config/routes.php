@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
-$route['404_override'] = '';
+$route['404_override'] = 'dashboard';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['autentica'] = "autentica";
@@ -62,16 +62,52 @@ $route['buscausuarioperfil'] = "buscausuarioperfil";
 
 
 /*
- * Usuários
+ * Usuï¿½rios
  */
 $route['listausuario'] = "home/listausuario";
+$route['consultausuario'] = "home/consultausuario";
+$route['profile'] = "home/profile";
+
+
+/*
+ * Cliente
+ */
+$route['cadastracliente'] = "home/cadastracliente";
+$route['consultacliente'] = "home/consultacliente";
+$route['listacliente'] = "home/listacliente";
+$route['alteracliente'] = "home/alteracliente";
+
+/*
+ * Produtos
+ */
+$route['cadastraproduto'] = "home/cadastraproduto";
+$route['consultaproduto'] = "home/consultaproduto";
+$route['listaproduto'] = "home/listaproduto";
+$route['alteraproduto'] = "home/alteraproduto";
+
+/*
+ * Pedidos
+ */
+$route['novopedido'] = "home/novopedido";
+$route['alterarpedido'] = "home/alterarpedido";
+$route['consultarpedido'] = "home/consultarpedido";
+$route['emissaopedido'] = "home/emissaopedido";
+
+/*
+ * RelatÃ³rios
+ */
+$route['relatorioclientes'] = "home/relatorioclientes";
+$route['relatoriopedidos'] = "home/relatoriopedidos";
+$route['relatorioprodutos'] = "home/relatorioprodutos";
+
+/*
+ * Agenda
+ */
+$route['agenda'] = "home/agenda";
 
 
 
-
-
-
-
+$route['geracodigobarras'] = "home/geracodigobarras";
 
 
 

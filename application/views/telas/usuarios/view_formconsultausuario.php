@@ -1,10 +1,10 @@
 <div class="content-wrapper">
       <section class="content-header">
-            <h1>Cadastro de Usu&aacute;rio</h1>
+            <h1>Consulta de Usu&aacute;rio</h1>
             <ol class="breadcrumb">
                   <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                   <li>Usu&aacute;rios</li>
-                  <li class="active">Cadastro de Usu&aacute;rio</li>
+                  <li class="active">Consulta de Usu&aacute;rio</li>
             </ol>
       </section>
 
@@ -21,7 +21,7 @@
                               }
                               ?>
                               <div class="box-body">
-                                    <form role="form" action="cadastrausuario" method="post"
+                                    <form role="form" action="consultausuario" method="post"
                                           class="form-horizontal">
                                           <div class="box-body">
                                                 <div class="form-group">
@@ -48,37 +48,12 @@
                                                                    name="email" placeholder="Informe o e-mail de contato" value="<?php echo set_value('email'); ?>">
                                                       </div>
                                                 </div>
-                                                <div class="form-group">
-                                                      <label for="senha" class="col-sm-2 control-label">Password</label>
-
-                                                      <div class="col-sm-10">
-                                                            <input type="password" class="form-control" id="senha"
-                                                                   name="senha"
-                                                                   placeholder="Informe uma senha de 6 a 8 caracteres" value="<?php echo set_value('senha'); ?>">
-                                                      </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                      <label for="perfilid" class="col-sm-2 control-label">Perfil</label>
-                                                      <div class="col-sm-10">
-                                                            <select class="form-control" id="perfilid" name="perfilid">
-                                                                  <option value="">Selecione...</option>
-                                                                  <?php
-                                                                  if (isset($resultadoPerfil)) {
-                                                                        foreach ($resultadoPerfil as $perfil) {
-                                                                              echo '<option value="' . $perfil->perfilid . '">' . $perfil->descricao . '</option>';
-                                                                        }
-                                                                  }
-                                                                  ?>
-                                                            </select>
-                                                      </div>
-                                                </div>
                                           </div>
                                           <div class="form-group">
                                                 <div class="col-xs-12 col-sm-9 col-lg-9">&nbsp;</div>
                                                 <div class="col-xs-12 col-sm-3 col-lg-3">
                                                       <button type="submit" class="btn btn-primary"
-                                                              style="width: 100%">Cadastrar Usu&aacute;rio</button>
+                                                              style="width: 100%">Consultar Usu&aacute;rio</button>
                                                 </div>
                                           </div>
                                     </form>
@@ -105,6 +80,7 @@
             });
       }
 </script>
+
 
 
 

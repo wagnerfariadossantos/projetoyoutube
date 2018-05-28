@@ -1,4 +1,5 @@
-<?php
+    <!DOCTYPE html>
+    <?php
 if ($this->session->userdata('logged_in')) {
 
     if (isset($tela)) {
@@ -7,7 +8,6 @@ if ($this->session->userdata('logged_in')) {
         $tela = 'view_dashboard';
     }
     ?>
-    <!DOCTYPE html>
     <html>
         <head>
             <meta charset="utf-8">
